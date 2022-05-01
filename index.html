@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./css/normalize.css">
+   <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+   <section class="order">
+
+      <div class="modal">
+         <div class="modal-content">
+            <h2>order Summary</h2>
+            <div class="modal-content-texts">
+               <p class="modal-content-order">
+                  A
+               </p>
+               <p class="modal-content-text">
+                  Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.
+               </p>
+               <div>
+                  <span>$14.00/ mo</span>
+                  <button class="btn-Checkout main-btn">Checkout</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container order-container">
+
+         <!-- nav list  -->
+         <nav class="order-nav">
+            <ul class="order-nav-list">
+               <li class="order-nav-item"><a href="#order-question-1" class="order-nav-link">01 Preferences</a></li>
+               <li class="order-nav-item"><a href="#order-question-2" class="order-nav-link">02 Bean Type</a></li>
+               <li class="order-nav-item"><a href="#order-question-3" class="order-nav-link">03 Quantity</a></li>
+               <li class="order-nav-item"><a href="#order-question-4" class="order-nav-link">04 Grind Option</a></li>
+               <li class="order-nav-item"><a href="#order-question-5" class="order-nav-link">05 Deliveries</a></li>
+            </ul>
+         </nav>
+         <!-- nav list  -->
+
+         <form class="order-form">
+
+            <!-- card start -->
+            <div class="order-cards">
+               <div class="order-card">
+                  <h2 class="order-card-heading">How do you drink your coffee?
+                     <i class="fa-solid order-down fa-angle-down"></i>
+                  </h2>
+                  <div id="order-question-1" class="order-question open">
+                     <label class="question-reply">
+                        <input name="reply" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">Capsule</strong>
+                           <strong class="question-content-text" >Compatible with Nespresso systems and similar brewers</strong>
+                        </span>
+                     </label>
+                     <label class="question-reply">
+                        <input name="reply" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">Filter</strong>
+                           <strong class="question-content-text" >For pour over or drip methods like Aeropress, Chemex, and V60</strong>
+                        </span>
+                     </label>
+                     <label class="question-reply">
+                        <input name="reply" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">Espresso</strong>
+                           <strong class="question-content-text" >Dense and finely ground beans for an intense, flavorful experience</strong>
+                        </span>
+                     </label>
+
+                  </div>
+               </div>
+               <div class="order-card">
+                  <h2 class="order-card-heading">What type of coffee?
+                     <i class="fa-solid order-down fa-angle-down"></i>
+                  </h2>
+                  <div id="order-question-2" class="order-question open">
+                     <label class="question-reply">
+                        <input name="reply2" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">Single Origin</strong>
+                           <strong class="question-content-text" >Distinct, high quality coffee from a specific family-owned farm</strong>
+                        </span>
+                     </label>
+                     <label class="question-reply">
+                        <input name="reply2" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">Decaf</strong>
+                           <strong class="question-content-text" >Just like regular coffee, except the caffeine has been removed</strong>
+                        </span>
+                     </label>
+                     <label class="question-reply">
+                        <input name="reply2" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">Blended</strong>
+                           <strong class="question-content-text" >Combination of two or three dark roasted beans of organic coffees</strong>
+                        </span>
+                     </label>
+
+                  </div>
+               </div>
+               <div class="order-card">
+                  <h2 class="order-card-heading">How much would you like?
+                     <i class="fa-solid order-down fa-angle-down"></i>
+                  </h2>
+                  <div id="order-question-3" class="order-question open">
+                     <label class="question-reply">
+                        <input name="reply3" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">250g</strong>
+                           <strong class="question-content-text" >Perfect for the solo drinker. Yields about 12 delicious cups.</strong>
+                        </span>
+                     </label>
+                     <label class="question-reply">
+                        <input name="reply3" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">500g</strong>
+                           <strong class="question-content-text" >Perfect option for a couple. Yields about 40 delectable cups.</strong>
+                        </span>
+                     </label>
+                     <label class="question-reply">
+                        <input name="reply3" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">1000g</strong>
+                           <strong class="question-content-text" >Perfect for offices and events. Yields about 90 delightful cups.</strong>
+                        </span>
+                     </label>
+
+                  </div>
+               </div>
+               <div class="order-card">
+                  <h2 class="order-card-heading">Want us to grind them?
+                     <i class="fa-solid order-down fa-angle-down"></i>
+                  </h2>
+                  <div id="order-question-4" class="order-question open">
+                     <label class="question-reply">
+                        <input name="reply4" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">Wholebean</strong>
+                           <strong class="question-content-text" >Best choice if you cherish the full sensory experience</strong>
+                        </span>
+                     </label>
+                     <label class="question-reply">
+                        <input name="reply4" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">Filter</strong>
+                           <strong class="question-content-text" >For drip or pour-over coffee methods such as V60 or Aeropress</strong>
+                        </span>
+                     </label>
+                     <label class="question-reply">
+                        <input name="reply4" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">Cafetiére</strong>
+                           <strong class="question-content-text" >Course ground beans specially suited for french press coffee</strong>
+                        </span>
+                     </label>
+
+                  </div>
+               </div>
+               <div class="order-card">
+                  <h2 class="order-card-heading">How often should we deliver?
+                     <i class="fa-solid order-down fa-angle-down"></i>
+                  </h2>
+                  <div id="order-question-5" class="order-question open">
+                     <label class="question-reply">
+                        <input name="reply5" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">Every week</strong>
+                           <strong class="question-content-text" >$7.20 per shipment. Includes free first-class shipping.</strong>
+                        </span>
+                     </label>
+                     <label class="question-reply">
+                        <input name="reply5" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">Every 2 weeks</strong>
+                           <strong class="question-content-text" >$9.60 per shipment. Includes free priority shipping.</strong>
+                        </span>
+                     </label>
+                     <label class="question-reply">
+                        <input name="reply5" type="radio">
+                        <span class="question-content">
+                           <strong class="question-content-heading">Every month</strong>
+                           <strong class="question-content-text" >$12.00 per shipment. Includes free priority shipping.</strong>
+                        </span>
+                     </label>
+
+                  </div>
+               </div>
+            </div>
+            <!-- card end -->
+
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+               <h3 class="order-summary-heading">Order Summary</h3>
+               <p class="order-summary-text">“I drink my coffee using <strong id="plan-1">Capsules</strong> , with a <strong id="plan-2">_____</strong> type of bean. <strong id="plan-3"> _____</strong> , sent to me <strong id="plan-4">_____</strong> . Sent to me <strong id="plan-5"> _____</strong>.”</p>
+
+            </div>
+            <!-- Order Summary -->
+               <button class="main-btn btn-close">Create me plan</button>
+         </form>
+
+      </div>
+   </section>
+
+
+   <script src="./js/app.js"></script>
+</body>
+</html>
